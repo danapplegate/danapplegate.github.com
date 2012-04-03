@@ -1,71 +1,52 @@
-/* Override some defaults */
-html, body {
-  background-color: #eee;
-}
-.navbar {
-  margin-bottom: 0;
-}
-.container > footer {
-  margin-top: 20px;
-}
-.container > footer p {
-  text-align: center; /* center align it with the container */
-}
+@import "fonts.css";
 
-/* The white background content wrapper */
-.content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+/* Global overrides */
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
 }
-
-/* Page header tweaks */
-.page-header {
-  background-color: #f5f5f5;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
-}
-
-.topbar .btn {
-  border: 0;
-}
+h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+body { font-family: "Georgia","Times New Roman",serif; }
+p, li { line-height: 1.5em; }
 
 
-/* tag_box ======================================================== */
-
-.tag_box {
-	list-style:none;
-	margin:0;
-	padding:5px 0 ;
-	overflow:hidden;
+#wrapper { width: 960px; margin: 100px auto 0; position: relative; }
+.site-title-section { position: fixed; top: 100px; text-align: right; }
+.site-title-section .site-title,
+.page-header h1 {
+    font-family: "RalewayThin","Helvetica","Arial",sans-serif;
+    font-size: 3em;
+    margin-bottom: 1em;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
 }
-.tag_box li {
-	line-height:28px;
+.site-title-section .site-tagline {
+    font-family: "LeagueGothicRegular","Helvetica","Arial",sans-serif;
+    font-size: 2em;
 }
-.tag_box.inline li {
-	float:left;
+.site-title-section .nav {
+    list-style-type: none;
 }
-.tag_box a {
-	padding: 3px 6px;
-	margin: 2px;
-	background: #eee;
-	color:#005F6B;
-	border-radius: 3px;
-	text-decoration:none;
+.site-title-section .nav li.active:after {
+    content: "<";
+    position: absolute;
+    right: -1em;
 }
-.tag_box a span{
-	vertical-align:super;
-	font-size:0.8em;
+.page-header h2 {
+    font-family: "LeagueGothicRegular","Times New Roman",serif;
+    font-size: 2em;
 }
-.tag_box a.active {
-	background:#57A957;
-	border:1px solid #4C964D;
-	color:#FFF;
+.container { margin-left: 24em; }
+.container:before {
+    content: ">";
+    font-family: "RalewayThin","Helvetica","Arial",sans-serif;
+    font-size: 3em;
+    position: absolute;
+    left: 7.2em;
 }
-	
+footer {
+    width: 200px;
+    text-align: center;
+    font-size: .8em;
+}
