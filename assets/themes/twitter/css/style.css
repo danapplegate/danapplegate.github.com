@@ -51,3 +51,8 @@ footer {
     font-size: .8em;
     margin-top: 350px;
 }
+
+/* Gist stylings */
+.gist .gist-file .gist-syntax .gist-highlight pre div span {
+    font-size: 12px;
+}
