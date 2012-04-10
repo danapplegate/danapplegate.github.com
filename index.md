@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello
-tagline: How can I help you?
+tagline: what can I do for you?
 group: navigation
 ---
 {% include JB/setup %}
