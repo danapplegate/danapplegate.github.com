@@ -15,7 +15,7 @@ p, li { line-height: 1.5em; }
 .site-title-section { position: fixed; top: 100px; text-align: right; }
 .site-title-section .site-title,
 .page-header h1 {
-    font-family: "RalewayThin","Helvetica","Arial",sans-serif;
+    font-family: "Raleway","Helvetica","Arial",sans-serif;
     font-size: 3em;
     margin-bottom: 1em;
     -webkit-margin-after: 0;
@@ -40,7 +40,7 @@ p, li { line-height: 1.5em; }
 .container { margin-left: 24em; }
 .container:before {
     content: ">";
-    font-family: "RalewayThin","Helvetica","Arial",sans-serif;
+    font-family: "Raleway","Helvetica","Arial",sans-serif;
     font-size: 3em;
     position: absolute;
     left: 7.2em;
